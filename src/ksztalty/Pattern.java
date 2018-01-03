@@ -29,13 +29,16 @@ public class Pattern {
                 .collect(Collectors.toList());
         filtr.forEach(System.out::println);
         System.out.println("-----------------------------------");
-        Function<Shape, String>createString = Shape::toString;
+
+        Function<Circle, String>createString = Object::toString;
         System.out.println(createString);
         System.out.println("-----------------------------------");
 
 
     }
 
-
-
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
