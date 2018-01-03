@@ -36,9 +36,5 @@ public class Pattern {
 
 
     }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+    
 }
