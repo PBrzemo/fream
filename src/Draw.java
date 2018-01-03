@@ -1,5 +1,9 @@
 import java.util.Random;
-
+/**
+ * @author {PBrzemo}
+ *
+ *
+ */
 public class Draw {
 
     public static void main(String[] args) {
