@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Losowanie {
+public class Draw {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
-package ksztalty;
+package Shapes;
 
-public class Circle extends Shape {
+public class Circle extends ShapeRun {
 
     @Override
     public void draw() {

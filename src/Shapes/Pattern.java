@@ -1,4 +1,4 @@
-package ksztalty;
+package Shapes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,22 +10,22 @@ public class Pattern {
     public static void main(String[] args) {
         Factory shapeFactory = new Factory();
 
-        Shape shape1 = shapeFactory.getShape("CIRCLE");
-        shape1.draw();
-        Shape shape2 = shapeFactory.getShape("TRIANGLE");
-        shape2.draw();
-        Shape shape3 = shapeFactory.getShape("SQUARE");
-        shape3.draw();
+        ShapeRun CIRCLE = shapeFactory.getShape("CIRCLE");
+        CIRCLE.draw();
+        ShapeRun TRIANGLE = shapeFactory.getShape("TRIANGLE");
+        TRIANGLE.draw();
+        ShapeRun SQUARE = shapeFactory.getShape("SQUARE");
+        SQUARE.draw();
         System.out.println("-----------------------------------");
 
-        List<Shape> list = new ArrayList<>();
-        list.add(shape1);
-        list.add(shape2);
-        list.add(shape3);
+        List<ShapeRun> list = new ArrayList<>();
+        list.add(CIRCLE);
+        list.add(TRIANGLE);
+        list.add(SQUARE);
         System.out.println(list);
         System.out.println("-----------------------------------");
-        List<Shape> filtr = list.stream()
-                .filter(l -> !shape2.equals(l)&& !shape3.equals(l))
+        List<ShapeRun> filtr = list.stream()
+                .filter(l -> !TRIANGLE.equals(l)&& !SQUARE.equals(l))
                 .collect(Collectors.toList());
         filtr.forEach(System.out::println);
         System.out.println("-----------------------------------");
@@ -36,5 +36,5 @@ public class Pattern {
 
 
     }
-    
+
 }

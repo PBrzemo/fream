@@ -1,6 +1,6 @@
-package ksztalty;
+package Shapes;
 
-public class Triangle extends Shape {
+public class Triangle extends ShapeRun {
 
         @Override
         public void draw() {

@@ -1,8 +1,8 @@
-package ksztalty;
+package Shapes;
 
 public class Factory {
 
-        public Shape getShape (String shapeType){
+        public ShapeRun getShape (String shapeType){
             if(shapeType == null){
                 return null;
             }
