@@ -15,12 +15,12 @@ enum Season {
 
     static public Season of ( Month month ) {
         switch ( month ) {
-            // Spring.
+            // Spring
             case MARCH:
                 return Season.SPRING;
             case APRIL:
                 return Season.SPRING;
-            // Summer.
+            // Summer
             case MAY:
                 return Season.SUMMER;
             case JUNE:
@@ -29,12 +29,12 @@ enum Season {
                 return Season.SUMMER;
             case AUGUST:
                 return Season.SUMMER;
-            // AUTUMN.
+            // AUTUMN
             case SEPTEMBER:
                 return Season.AUTUMN;
             case OCTOBER:
                 return Season.AUTUMN;
-            // Winter.
+            // Winter
             case NOVEMBER:
                 return Season.WINTER;
             case DECEMBER:
@@ -76,9 +76,14 @@ public class EnumSeason {
         System.out.println("---------------------");
 
         for (Season s : Season.values())
-            System.out.println(s); //
+            System.out.println(s);
 
 
 
     }
 }
+
+//        EnumSet<Month> SPRING = EnumSet.of(Month.MARCH, Month.APRIL);
+//        EnumSet<Month> SUMMER = EnumSet.of(Month.MAY, Month.JUNE, Month.JULY, Month.AUGUST);
+//        EnumSet<Month> AUTUMN = EnumSet.of(Month.SEPTEMBER, Month.OCTOBER);
+//        EnumSet<Month> WINTER = EnumSet.of(Month.NOVEMBER, Month.DECEMBER, Month.JANUARY, Month.FEBRUARY);
