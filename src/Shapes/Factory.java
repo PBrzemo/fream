@@ -2,7 +2,7 @@ package Shapes;
 
 public class Factory {
 
-        public ShapeRun getShape (String shapeType){
+        public Shape getShape (String shapeType){
             if(shapeType == null){
                 return null;
             }
