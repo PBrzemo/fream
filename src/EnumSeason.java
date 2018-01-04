@@ -57,7 +57,7 @@ enum Season {
 
 public class EnumSeason {
 
-    public static void main(String[] args) {
+    public static void main() {
         DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         ZoneId zoneId = ZoneId.of ("Poland");
         ZonedDateTime zdt = ZonedDateTime.now (zoneId);

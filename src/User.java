@@ -1,5 +1,12 @@
 public class User {
 
+
+    public static void main() {
+        int id;
+        String firstName;
+        String lastName;
+
+    }
     /*
     8.
 - zdefiniuj klasę User z 3 polami (id, firstName, lastName)
