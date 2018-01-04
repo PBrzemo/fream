@@ -4,7 +4,7 @@ public class MainMenu {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println ( "1) url 1\n2) Shape 2\n3) Encryption 3\n4) Generic 4\n5) SinCos 5\n6) Draw 6\n7) Fibo\n8) User 8\n9) javadoc\n10) Enum 10" );
+        System.out.println ( "1) url \n2) Shape \n3) Encryption \n4) Generic \n5) SinCos \n6) Draw \n7) Fibo\n8) User \n9) javadoc\n10) Enum" );
         System.out.println("Select:");
         Scanner in = new Scanner(System.in);
 
