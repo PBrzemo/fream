@@ -46,15 +46,8 @@ public class User {
                     .id(30)
                     .build();
         }
-
-        public static void main() {
-
-
-            }
-
-        }
-
     }
+}
 
 /*
     8.

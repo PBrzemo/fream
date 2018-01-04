@@ -1,4 +1,7 @@
 
+import shapes.ShapeRun;
+import url.Img;
+
 import java.util.Scanner;
 public class MainMenu {
 
@@ -12,11 +15,11 @@ public class MainMenu {
         switch (in.nextInt()) {
             case 1:
                 System.out.println("Url");
-                url.Img.main();
+                Img.main();
                 break;
             case 2:
                 System.out.println("Shape");
-                shapes.ShapeRun.main();
+                ShapeRun.main();
                 break;
             case 3:
                 System.out.println("Encryption");
@@ -39,8 +42,8 @@ public class MainMenu {
                 Fibo.main();
                 break;
             case 8:
-                System.out.println("User");
-                User.main();
+                System.out.println("User in progres");
+                //User.main();
                 break;
             case 9:
                 System.out.println("javadoc");
