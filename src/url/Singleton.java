@@ -1,9 +1,11 @@
 package url;
+import javax.net.ssl.HttpsURLConnection;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
+
 
 public enum Singleton {
     INSTANCE;
@@ -23,5 +25,23 @@ public enum Singleton {
 
         is.close();
         os.close();
+    }
+
+
+    public void ServerStatus(HttpsURLConnection con){
+
+        if(con!=null){
+
+            try {
+                System.out.println("---------------------------------------------");
+                System.out.println("Server response code: " + con.getResponseCode());
+                System.out.println("---------------------------------------------");
+
+                } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
     }
 }

@@ -1,9 +1,11 @@
 package url;
 
+import javax.net.ssl.HttpsURLConnection;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Scanner;
 
-public class Obraz {
+public class Img {
 
 
     public static void main(String[] args) throws IOException {
@@ -11,11 +13,16 @@ public class Obraz {
         System.out.println("podaj url obrazka:");
         Scanner sc = new Scanner(System.in);
         String imgUrl = sc.next();
+
         Singleton singleton = Singleton.INSTANCE;
+        String forServerStatus = sc.next();
+        URL url;
+        url = new URL(forServerStatus);
+        HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
+        singleton.ServerStatus(con);
+
         String saveImg = "o.jpg";
-
         singleton.saveImage(imgUrl, saveImg);
-
 
 
     }

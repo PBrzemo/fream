@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Fibo {
     public static void main(String[] args) {
-            Watek w1 = new Watek();
-            (new Thread(w1)).start();
+            Thread w1 = new Thread();
+            (new java.lang.Thread(w1)).start();
 
     }
 }
 
-class Watek extends Thread{
+class Thread extends java.lang.Thread {
     public void run(){
         int x = 1, y = 1;
         int temp;
